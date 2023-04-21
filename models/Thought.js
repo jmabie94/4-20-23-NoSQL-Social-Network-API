@@ -65,7 +65,13 @@ const ThoughtSchema = new Schema(
 );
 
 ThoughtSchema.virtual('reactionCount').get(function() {
-    return this.reactions.length;
+    // return this.reactions.length;
+    // so that the Thoughts can still show if any have no reactions!
+    if (!this.reactions) {
+        return 0;
+    } else {
+        return this.reactions.length;
+    }
 });
 
 const Thought = model('Thought', ThoughtSchema);

@@ -39,7 +39,13 @@ const UserSchema = new Schema(
 );
 
 UserSchema.virtual('friendCount').get(function () {
-    return this.friends.length;
+    // return this.friends.length;
+    // so that the Users can still show if any have no friends!
+    if (!this.friends) {
+        return 0;
+    } else {
+        return this.friends.length;
+    }
 });
 
 const User = model('User', UserSchema);
