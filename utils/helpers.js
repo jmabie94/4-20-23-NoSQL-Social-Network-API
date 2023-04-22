@@ -8,11 +8,12 @@ const addSuffix = date => {
 
     const lastCharacter = dateString.charAt(dateString.length - 1);
 
+    // forgot to add triple equals
     if (lastCharacter === '1' && dateString !== '11') {
         dateString = `${dateString}st`;
-    } else if (lastCharacter = '2' && dateString !== '12') {
+    } else if (lastCharacter === '2' && dateString !== '12') {
         dateString = `${dateString}nd`;
-    } else if (lastCharacter = '3' && dateString !== '13') {
+    } else if (lastCharacter === '3' && dateString !== '13') {
         dateString = `${dateString}rd`;
     } else {
         dateString = `${dateString}th`;

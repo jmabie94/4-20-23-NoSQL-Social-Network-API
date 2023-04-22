@@ -11,7 +11,12 @@ const { User, Thought } = require('../models');
 const userController = {
     // get all users
     getAllUser(req, res) {
+        // adding .populate thoughts here so that get all users shows their thoughts
         User.find({})
+            .populate({
+                path: 'thoughts',
+                select: '-__v',
+            })
             .populate({
                 path: 'friends',
                 select: '-__v',
@@ -93,11 +98,23 @@ const userController = {
 
     // add friend
     addFriend({ params }, res) {
+        // adding an additional User.findOneAndUpdate so that both people are added to eachother's friend lists when either is friend/user
         User.findOneAndUpdate(
             { _id: params.userId },
             { $addToSet: { friends: params.friendId } },
             { new: true, runValidators: true }
-        )
+            )
+            .then((dbUserData) => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this ID!' });
+                    return;
+                }
+                return User.findOneAndUpdate(
+                    { _id: params.friendId },
+                    { $addToSet: { friends: params.userId } },
+                    { new: true, runValidators: true }
+                )
+            })
             .then((dbUserData) => {
                 if (!dbUserData) {
                     res.status(404).json({ message: 'No user found with this ID!' });

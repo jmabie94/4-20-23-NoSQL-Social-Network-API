@@ -3,6 +3,7 @@ const { Thought, User } = require('../models');
 const thoughtController = {
     // get all Thoughts
     getAllThought(req, res) {
+        // populating reactions might not be needed
         Thought.find({})
             .populate({
                 path: 'reactions',
@@ -19,6 +20,7 @@ const thoughtController = {
 
     // get one Thought by id
     getThoughtById({ params }, res) {
+        // populating reactions might not be needed
         Thought.findOne({ _id: params.id })
             .populate({
                 path: 'reactions',
@@ -130,7 +132,7 @@ const thoughtController = {
         )
             .then((dbThoughtData) => res.json(dbThoughtData));
     },
-    
+
 };
 
 module.exports = thoughtController;
