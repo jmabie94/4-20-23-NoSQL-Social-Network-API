@@ -2,10 +2,10 @@
 
 ## Description
 
-Building a Social Network API using MongoDB to allow the User to test changes and make adjustments on the backend directly by way of Insomnia or the MongoDB Compass. 
+#### Building a Social Network API using MongoDB to allow the User to test changes and make adjustments on the backend directly by way of Insomnia or the MongoDB Compass. 
 ---
+
 ## Contents
-​
 - [User Story](#user-story)
 - [Installation](#installation)
 - [Media](#media)
@@ -14,13 +14,11 @@ Building a Social Network API using MongoDB to allow the User to test changes an
 - [License](#license)
 ​
 ### User Story
-​
 ```md
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ```
-​
 ## Installation:
 
 Utilizing the Application is simple!
@@ -40,25 +38,30 @@ After Node Packages have installed, open run the application:
 
 
 Finally, navigate to Insomnia or MongoDB Compass and test the functionalities!
-    
----
 ​
-### Media
+## Media
 
-User Routes:
-![User Routes]()
+App Start & User Routes (Google Drive):
+![User Routes](https://drive.google.com/file/d/1YPpMUWyH26wPM9evJNve2VpSD-pMCPN0/view)
+(File In The Repo):
+![User Routes Repo](./media/nosql-api-app-start-and-user-routes.webm)
 
-Add & Delete Friends:
-![Friend Routes]()
+Add & Delete Friends (Google Drive):
+![Friend Routes](https://drive.google.com/file/d/1wLC6S2xQzhXrgxgff01kLOUS2zRiySiL/view)
+(File In The Repo):
+![Friend Routes](./media/nosql-api-add-and-delete-friends.webm)
 
-Thought Routes:
-![Thought Routes]()
+Thought Routes (Google Drive):
+![Thought Routes](https://drive.google.com/file/d/1G1QBQpYHrI7VQFNS5Em4Q_4KO387UAyr/view)
+(File In The Repo):
+![Thought Routes](./media/nosql-api-thought-routes.webm)
 
-Add & Delete Reactions:
-![Reaction Routes]()
+Add & Delete Reactions (Google Drive):
+![Reaction Routes](https://drive.google.com/file/d/1QBr0FeN8eUyQ_qkBdd5ZP8-BK3DNw-sn/view)
+(File In The Repo):
+![Reaction Routes](./media/nosql-api-reaction-routes.webm)
 ​
 ## Credits
-​
 - Jack Mabie (https://github.com/jmabie94)
 ​
 ## Technology Used
@@ -70,7 +73,6 @@ Add & Delete Reactions:
     - StackExchange in creating a better helper function to format timestamps
     - AskBCS
     - Tutoring
-​
 ## License
 ​
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
