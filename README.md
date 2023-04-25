@@ -41,23 +41,27 @@ Finally, navigate to Insomnia or MongoDB Compass and test the functionalities!
 ​
 ## Media
 
-App Start & User Routes (Google Drive):
-![User Routes](https://drive.google.com/file/d/1YPpMUWyH26wPM9evJNve2VpSD-pMCPN0/view)
+### App Start & User Routes (Google Drive):
+https://drive.google.com/file/d/1YPpMUWyH26wPM9evJNve2VpSD-pMCPN0/view
+
 (File In The Repo):
 ![User Routes Repo](./media/nosql-api-app-start-and-user-routes.webm)
 
-Add & Delete Friends (Google Drive):
-![Friend Routes](https://drive.google.com/file/d/1wLC6S2xQzhXrgxgff01kLOUS2zRiySiL/view)
+### Add & Delete Friends (Google Drive):
+https://drive.google.com/file/d/1wLC6S2xQzhXrgxgff01kLOUS2zRiySiL/view
+
 (File In The Repo):
 ![Friend Routes](./media/nosql-api-add-and-delete-friends.webm)
 
-Thought Routes (Google Drive):
-![Thought Routes](https://drive.google.com/file/d/1G1QBQpYHrI7VQFNS5Em4Q_4KO387UAyr/view)
+### Thought Routes (Google Drive):
+https://drive.google.com/file/d/1G1QBQpYHrI7VQFNS5Em4Q_4KO387UAyr/view
+
 (File In The Repo):
 ![Thought Routes](./media/nosql-api-thought-routes.webm)
 
-Add & Delete Reactions (Google Drive):
-![Reaction Routes](https://drive.google.com/file/d/1QBr0FeN8eUyQ_qkBdd5ZP8-BK3DNw-sn/view)
+### Add & Delete Reactions (Google Drive):
+https://drive.google.com/file/d/1QBr0FeN8eUyQ_qkBdd5ZP8-BK3DNw-sn/view
+
 (File In The Repo):
 ![Reaction Routes](./media/nosql-api-reaction-routes.webm)
 ​
